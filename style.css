@@ -1122,3 +1122,439 @@ body {
         clear: both;
     }
 }
+
+
+
+------------module02------------------/
+/* ============================================================
+   FORCED DARK MODE - FIXES WHITE BACKGROUND
+   ============================================================ */
+
+
+/* Fix for all sections to ensure they don't turn white */
+section, .container, .main, #header {
+    background-color: #080808 !important;
+}
+
+/* ============================================================
+   UI/UX ASSIGNMENT SPECIFIC (ui-ux-details.html)
+   ============================================================ */
+.day-card {
+    background: #111111 !important; 
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.sub-title-blue {
+    color: #ffffff !important;
+}
+
+.day-desc {
+    color: #cccccc !important;
+}
+
+/* ============================================================
+   INDEX.HTML MODULE CARDS
+   ============================================================ */
+.module-card.featured-ui {
+    background: linear-gradient(145deg, #0d0d0d, #001a1f) !important;
+    border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+/* Project Showcase Grid */
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.showcase-item {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(0, 210, 255, 0.2); /* Soft Blue Border */
+    transition: 0.4s ease;
+    background: #000;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 250px;       /* Fixed height for uniformity */
+    object-fit: cover;   /* Ensures images don't stretch */
+    display: block;
+    opacity: 0.8;        /* Slightly dim to make the glow pop on hover */
+    transition: 0.4s;
+}
+
+.showcase-item:hover {
+    border-color: #00D2FF;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.showcase-item:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Mobile Responsive: Stacks photos on small screens */
+@media (max-width: 768px) {
+    .project-showcase {
+        grid-template-columns: 1fr;
+    }
+    .showcase-item img {
+        height: 200px;
+    }
+}
+
+/* --- Final Figma Button Styling --- */
+.figma-action {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.figma-btn-real {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    background: #1e1e1e;           /* Darker button base */
+    color: #ffffff !important;      /* Forces text to be white */
+    text-decoration: none !important; /* REMOVES BLUE UNDERLINE */
+    border: 2px solid #00D2FF;      /* Cyber Blue Border */
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 210, 255, 0.2);
+}
+
+/* Authentic Figma Icon Gradient */
+.figma-btn-real i {
+    font-size: 20px;
+    background: linear-gradient(180deg, #F24E1E 0%, #A259FF 50%, #1ABCFE 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.figma-btn-real:hover {
+    transform: translateY(-4px);
+    background: #252525;
+    border-color: #ffffff;
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
+}
+
+/* Project Showcase Grid Fix */
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .project-showcase { grid-template-columns: 1fr; }
+}
+
+/* Highlighting the Red Bull Project in Day 04 */
+.project-highlight-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(0, 210, 255, 0.03);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 210, 255, 0.1);
+}
+
+.highlight-title {
+    color: #00D2FF;
+    font-size: 24px; /* Made slightly bigger for highlighting */
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Grid for 2 Photos */
+.project-showcase-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.project-showcase-2 .showcase-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+    transition: 0.3s;
+}
+
+.project-showcase-2 .showcase-item img:hover {
+    border-color: #ffffff;
+    transform: scale(1.02);
+}
+
+/* Ensure the Figma button stays centered */
+.figma-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* ============================================================
+   PURPLE THEME FOR FINAL PROJECT (Day 05-06)
+   ============================================================ */
+
+/* The Card Glow */
+.featured-purple {
+    border: 1px solid rgba(162, 89, 255, 0.4) !important;
+    background: linear-gradient(145deg, #0d0d0d, #1a0b2e) !important;
+    box-shadow: 0 10px 30px rgba(162, 89, 255, 0.15);
+}
+
+.purple-text {
+    color: #A259FF !important; /* Figma Purple */
+}
+
+.purple-title {
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(162, 89, 255, 0.3);
+}
+
+/* Purple Topic Tags */
+.topic-tag-purple {
+    background: rgba(162, 89, 255, 0.1);
+    color: #A259FF;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid rgba(162, 89, 255, 0.3);
+    margin-right: 5px;
+}
+
+/* Purple Image Borders */
+.purple-border {
+    border: 2px solid rgba(162, 89, 255, 0.3) !important;
+}
+
+.purple-border:hover {
+    border-color: #A259FF !important;
+    box-shadow: 0 0 20px rgba(162, 89, 255, 0.4);
+}
+
+/* --- Purple Figma Buttons --- */
+.figma-btn-purple {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background: #121212;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    border: 2px solid #A259FF; /* Purple Border */
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.figma-btn-purple i {
+    font-size: 18px;
+    color: #A259FF; /* Simple Purple Icon */
+}
+
+/* If you want the Figma icon to keep its original colors, keep this: */
+.figma-btn-purple .fa-figma {
+    background: linear-gradient(180deg, #F24E1E 0%, #A259FF 50%, #1ABCFE 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.figma-btn-purple:hover {
+    transform: translateY(-5px);
+    background: #1a0b2e;
+    border-color: #ffffff;
+    box-shadow: 0 0 25px rgba(162, 89, 255, 0.6);
+}
+
+/* --- Optimized Grid for 3 Photos --- */
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+    width: 100%; /* Ensures it fills the card width */
+}
+
+.showcase-item {
+    width: 100%;
+    height: 180px; /* Forces a consistent height for all 3 boxes */
+    border-radius: 10px;
+    overflow: hidden; /* Prevents images from leaking out */
+    border: 2px solid rgba(243, 240, 248, 0.3); /* Purple border for final project */
+    background: #000;
+    position: relative;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* CRITICAL: Crops the image to fit perfectly without stretching */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.showcase-item:hover img {
+    transform: scale(1.1); /* Nice zoom effect on hover */
+}
+
+/* --- Button Group Alignment Fix --- */
+.figma-action-group {
+    display: flex;
+    justify-content: flex-start; /* Aligns buttons to the left like your screenshot */
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Ensure buttons don't have unwanted margins */
+.figma-btn-purple, .figma-btn-real {
+    margin: 0;
+}
+
+/* This ensures every Day Card stays in its own space */
+.day-card {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px !important; /* Forces vertical space between boxes */
+    padding: 30px;
+    background: #111111;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden; /* Prevents images from leaking into the next day */
+    clear: both;      /* Fixes layout if you used any floats */
+}
+
+/* Ensure the timeline itself has vertical spacing */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Modern way to space out vertical items */
+    padding-bottom: 50px;
+}
+
+.project-showcase, .project-showcase-2 {
+    display: grid;
+    width: 100%;
+    margin: 25px 0;
+    /* This prevents the grid from expanding wider than the card */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 15px;
+}
+
+.showcase-item {
+    height: 200px; /* Keep this fixed so boxes don't get 'long' */
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Fix for Day 01 and Day 03 Overlap --- */
+
+/* Day 01 Specific: Fixes the single screenshot box */
+.ss-box {
+    width: 100%;
+    margin-top: 20px;
+    clear: both;
+    display: block;
+}
+
+.ss-box img {
+    width: 100%;
+    max-height: 400px; /* Prevents Day 01 from becoming too long */
+    object-fit: contain; /* Shows full screenshot without cropping */
+    border-radius: 10px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+/* Day 03 Specific: Fixes the 2-image grid from mixing */
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Forces exactly 2 columns for Day 03 */
+    gap: 15px;
+    margin-top: 20px;
+    clear: both;
+}
+
+/* Global Card Fix: Prevents "Mixing" */
+.day-card {
+    display: flow-root; /* CRITICAL: Creates a new scaling context so content stays inside */
+    width: 100%;
+    margin-bottom: 50px !important; /* Adds a clear gap between Day 01, 02, 03, etc. */
+    background: #111111;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Forces two equal columns */
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.screenshot-grid img {
+    width: 100%;
+    height: 250px;      /* Set a fixed height */
+    object-fit: cover;  /* Crops them nicely */
+    border-radius: 8px;
+    border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+.back-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+  
+    color: #ff004f !important;
+    text-decoration: none !important;
+    border: 2px solid #ff004f; 
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+      
