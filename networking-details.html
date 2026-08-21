@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 09 | Networking Progress</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section id="networking-module" class="container">
+        <!-- Back Navigation -->
+        <div class="back-nav">
+            <a href="index.html#modules" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Modules
+            </a>
+        </div>
+
+        <!-- Header -->
+        <div class="section-header-blue">
+            <span class="cyber-tag">// MODULE 09</span>
+            <h2 class="sub-title-blue">Networking Progress</h2>
+        </div>
+
+        <!-- Timeline Content -->
+        <div class="timeline">
+            
+            <!-- Day 01 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 01</span>
+        <h3>Data Communication & Fundamentals</h3>
+    </div>
+    
+    <p class="day-desc">
+        Learned the core concepts of <strong>Data Communication</strong>, including components, system characteristics, transmission modes, and data types.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Data Communication</span>
+        <span class="topic-tag">Transmission Modes</span>
+        <span class="topic-tag">Characteristics</span>
+        <span class="topic-tag">Data Types</span>
+    </div>
+
+    <!-- 5 Components Flowchart -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">5 Key Components of Data Communication</h4>
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-paper-plane flow-icon"></i>
+                <span class="flow-title">Sender</span>
+                <span class="flow-sub">Source</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-envelope flow-icon"></i>
+                <span class="flow-title">Message</span>
+                <span class="flow-sub">Data</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-ethernet flow-icon"></i>
+                <span class="flow-title">Medium</span>
+                <span class="flow-sub">Path</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-inbox flow-icon"></i>
+                <span class="flow-title">Receiver</span>
+                <span class="flow-sub">Destination</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-tasks flow-icon"></i>
+                <span class="flow-title">Protocol</span>
+                <span class="flow-sub">Rules</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- System Characteristics Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Key Characteristics</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Characteristic</th>
+                        <th>Key Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Delivery</strong></td>
+                        <td>Data reaches the correct destination.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Accuracy</strong></td>
+                        <td>Data remains exact and uncorrupted.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Timeliness</strong></td>
+                        <td>Delivered on time without delay.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jitter</strong></td>
+                        <td>Variation in packet arrival times.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Security</strong></td>
+                        <td>Protected from unauthorized access.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Communication & Transmission Modes Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Communication & Transmission Modes</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Mode</th>
+                        <th>Type</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Simplex</strong></td>
+                        <td>One-way flow</td>
+                        <td>TV, Radio</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Half-Duplex</strong></td>
+                        <td>Two-way, one at a time</td>
+                        <td>Walkie-Talkie</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full-Duplex</strong></td>
+                        <td>Simultaneous two-way</td>
+                        <td>Audio / Video Call</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Parallel</strong></td>
+                        <td>All bits transfer together</td>
+                        <td>Internal Bus</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Serial</strong></td>
+                        <td>One bit transfers at a time</td>
+                        <td>USB Cable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Data Classification Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Data Categorization</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Description</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Oriented Data</strong></td>
+                        <td>Data directly provided by user</td>
+                        <td>Forms, Profiles</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Observed Data</strong></td>
+                        <td>Automatically tracked data</td>
+                        <td>Insta Algorithm, Logs</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inferred Data</strong></td>
+                        <td>Predicted by analyzing observed data</td>
+                        <td>Recommendations, Ads</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+        </div>
+
+        <!-- Day 02 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 02</span>
+        <h3>Network Types, Devices, Topologies & Protocols</h3>
+    </div>
+    
+    <p class="day-desc">
+        Learned about network classifications, hardware devices, structural topologies, IP/MAC addressing, and essential protocols.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Network Types</span>
+        <span class="topic-tag">Hardware Devices</span>
+        <span class="topic-tag">Topologies</span>
+        <span class="topic-tag">Protocols & Addressing</span>
+    </div>
+
+    <!-- Network Types Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Network Classifications</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Coverage / Scope</th>
+                        <th>Key Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>LAN</strong></td>
+                        <td>Local Area Network</td>
+                        <td>Small area (Home, Office)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAN</strong></td>
+                        <td>Metropolitan Area Network</td>
+                        <td>City-wide coverage</td>
+                    </tr>
+                    <tr>
+                        <td><strong>WAN</strong></td>
+                        <td>Wide Area Network</td>
+                        <td>Country/Global scale</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Internet</strong></td>
+                        <td>Public Network</td>
+                        <td>Open-source, accessible to all</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intranet</strong></td>
+                        <td>Private Network</td>
+                        <td>Restricted to company/organization</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Addressing & System Terms Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Addressing & Infrastructure</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Key Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>NIC</strong></td>
+                        <td>Network Interface Card; connects device to LAN.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MAC Address</strong></td>
+                        <td>Permanent physical hardware ID (cannot be changed).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>IP Address</strong></td>
+                        <td>Logical network address assigned to devices.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DNS</strong></td>
+                        <td>Domain Name System; resolves names to prevent duplicates.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ISP</strong></td>
+                        <td>Internet Service Provider.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Networking Hardware Devices Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Networking Hardware</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Device</th>
+                        <th>Working Principle</th>
+                        <th>Data Format</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Hub</strong></td>
+                        <td>Central connection; broadcasts data to all connected PCs.</td>
+                        <td>Bits</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Switch</strong></td>
+                        <td>Saves MAC addresses; sends data to target device.</td>
+                        <td>Frames</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Router</strong></td>
+                        <td>Connects networks; routes data to multiple devices.</td>
+                        <td>Packets</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Topologies Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Network Topologies</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Topology</th>
+                        <th>Structure / Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bus</strong></td>
+                        <td>All devices connected along a single main central cable.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Star</strong></td>
+                        <td>Central hub/switch with devices connected in all directions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mesh</strong></td>
+                        <td>Every device interconnected; highly efficient and fault-tolerant.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ring / Hybrid</strong></td>
+                        <td>Combination or loop structure connecting devices sequentially.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Key Protocols Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Key Protocols</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Protocol</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TCP</strong></td>
+                        <td>Transmission Control Protocol; reliable data transfer.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SMTP</strong></td>
+                        <td>Simple Mail Transfer Protocol; used for sending email.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FTP</strong></td>
+                        <td>File Transfer Protocol; used for transferring files.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HTTPS</strong></td>
+                        <td>Secure Hypertext Transfer Protocol; encrypted web traffic.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Day 03 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 03</span>
+        <h3>Topologies, RAG Model, OCR & OSI Model</h3>
+    </div>
+    
+    <p class="day-desc">
+        Covered network topologies, LLM concepts like RAG, OCR tools, and the 7 layers of the OSI model with protocol mechanisms.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Network Topologies</span>
+        <span class="topic-tag">RAG Model & OCR</span>
+        <span class="topic-tag">OSI 7 Layers</span>
+        <span class="topic-tag">Transport Protocols</span>
+    </div>
+
+    <!-- Network Topologies Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Network Topologies Summary</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Topology</th>
+                        <th>Working Principle / Key Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Star</strong></td>
+                        <td>Devices connected to a central point in star formation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mesh</strong></td>
+                        <td>All devices interconnected; highly secure and reliable.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ring</strong></td>
+                        <td>Devices connected in a closed loop; single node failure impacts loop.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tree</strong></td>
+                        <td>Hierarchical structure combining star and bus features.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- RAG & OCR Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">AI & Data Extraction Concepts</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Concept</th>
+                        <th>Core Function / Application</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>RAG Model</strong></td>
+                        <td>Enhances LLMs via vector embeddings; reduces hallucinations & improves context awareness.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>OCR (PaddleOCR)</strong></td>
+                        <td>Optical Character Recognition repository used for text extraction & learning.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- OSI Layers Detailed Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">OSI Model Layer Breakdown</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Layer</th>
+                        <th>Data Unit</th>
+                        <th>Primary Role & Protocols</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Application</strong></td>
+                        <td>Data</td>
+                        <td>User interface; uses SMTP, FTP, HTTPS protocols.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Presentation</strong></td>
+                        <td>Data</td>
+                        <td>Data formatting, encryption, and compression (e.g. Zip).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Session</strong></td>
+                        <td>Data</td>
+                        <td>Establishes, maintains, authenticates, and authorizes sessions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Transport</strong></td>
+                        <td>Segments</td>
+                        <td>TCP (feedback/confirmation) & UDP (no feedback); error checking.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Network</strong></td>
+                        <td>Packets</td>
+                        <td>Handles IP addresses and packet routing across networks.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6. Data Link</strong></td>
+                        <td>Frames</td>
+                        <td>Manages physical (MAC) addresses and flow control.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>7. Physical</strong></td>
+                        <td>Bits</td>
+                        <td>Physical bit transmission via hardware (Hubs, Cables, Switches).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+ <!-- Day 04 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 04</span>
+        <h3>RAG, Web Protocols, IP Addressing & URL Anatomy</h3>
+    </div>
+    
+    <p class="day-desc">
+        Covered LLM concepts like RAG, IP addressing modes/versions, HTTP methods, DNS, and a complete structural breakdown of URLs.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">RAG & AI</span>
+        <span class="topic-tag">IP Addressing</span>
+        <span class="topic-tag">HTTP Methods</span>
+        <span class="topic-tag">DNS & URL Anatomy</span>
+    </div>
+
+    <!-- RAG & Data Overview Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">AI Concept & Data Classification</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Concept / Type</th>
+                        <th>Key Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>RAG Model</strong></td>
+                        <td>Vector embeddings; reduces hallucinations &amp; adds context awareness.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Oriented Data</strong></td>
+                        <td>Data explicitly provided by the user.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Observed Data</strong></td>
+                        <td>Tracked automatically (e.g., social algorithms).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Inferred Data</strong></td>
+                        <td>Predicted by analyzing observed patterns.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- IP Addressing Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">IP Address Types &amp; Versions</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Type / Version</th>
+                        <th>Key Feature</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Access Type</strong></td>
+                        <td>Public IP</td>
+                        <td>Globally accessible over the Internet.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Access Type</strong></td>
+                        <td>Private IP</td>
+                        <td>Restricted to local networks/companies.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Assignment</strong></td>
+                        <td>Static IP</td>
+                        <td>Fixed IP address; does not change.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Assignment</strong></td>
+                        <td>Dynamic IP</td>
+                        <td>Changes per connection/router assignment.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Format</strong></td>
+                        <td>IPv4</td>
+                        <td>32-bit decimal format (~4.3B addresses).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Format</strong></td>
+                        <td>IPv6</td>
+                        <td>128-bit hexadecimal format.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- HTTP Methods Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">HTTP Request Methods</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>GET</code></td>
+                        <td>Fetches / retrieves data.</td>
+                    </tr>
+                    <tr>
+                        <td><code>POST</code></td>
+                        <td>Creates new data.</td>
+                    </tr>
+                    <tr>
+                        <td><code>PUT</code></td>
+                        <td>Updates existing data.</td>
+                    </tr>
+                    <tr>
+                        <td><code>DELETE</code></td>
+                        <td>Removes data.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- URL Breakdown Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">URL Components &amp; DNS</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>DNS</strong></td>
+                        <td>Domain Name System; maps human-readable domain names to IP addresses.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Scheme</strong></td>
+                        <td>Protocol used for communication (e.g., <code>https</code>, <code>mailto:</code>, <code>ftp</code>).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Domain Name</strong></td>
+                        <td>Includes SLD (site name) and TLD extension (e.g., <code>.com</code>, <code>.org</code>).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Path</strong></td>
+                        <td>Specific directory/location of a resource on the server.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Query (?)</strong></td>
+                        <td>Passes additional parameters like search terms or filters.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fragment (#)</strong></td>
+                        <td>Points to a specific section/anchor within the webpage.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Day 05 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 05</span>
+        <h3>DHCP, DORA Process, ARP & ICMP</h3>
+    </div>
+    
+    <p class="day-desc">
+        Covered dynamic network configuration via DHCP, key IP parameters, address translation using ARP, and diagnostic messaging via ICMP.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">DHCP & DORA</span>
+        <span class="topic-tag">IP & Subnetting</span>
+        <span class="topic-tag">ARP Protocol</span>
+        <span class="topic-tag">ICMP & Diagnostics</span>
+    </div>
+
+    <!-- DORA Process Flowchart -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">DHCP DORA Process</h4>
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-search flow-icon"></i>
+                <span class="flow-title">Discover</span>
+                <span class="flow-sub">Client locates server</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-hand-holding-usd flow-icon"></i>
+                <span class="flow-title">Offer</span>
+                <span class="flow-sub">Server offers IP</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-paper-plane flow-icon"></i>
+                <span class="flow-title">Request</span>
+                <span class="flow-sub">Client requests IP</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-check-circle flow-icon"></i>
+                <span class="flow-title">Acknowledge</span>
+                <span class="flow-sub">Server confirms lease</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Network Configuration Parameters Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">IP Assignment Parameters</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Function / Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>IP Address</strong></td>
+                        <td>Dynamically allocated logical address for device identification.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Subnet Mask</strong></td>
+                        <td>Splits an IP into Network ID and Host ID portions.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Default Gateway</strong></td>
+                        <td>Router interface path used by devices to exit the local network to the internet.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lease Time</strong></td>
+                        <td>Duration for which the assigned IP remains valid before renewal.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DNS Server IP</strong></td>
+                        <td>Translates domain names to IP addresses for web browsing.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- ARP & ICMP Protocols Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Network Layer Protocols (ARP, RARP & ICMP)</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Protocol</th>
+                        <th>Full Form</th>
+                        <th>Primary Function & Commands</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ARP</strong></td>
+                        <td>Address Resolution Protocol</td>
+                        <td>Maps known IP addresses to physical MAC addresses for local delivery.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RARP</strong></td>
+                        <td>Reverse ARP</td>
+                        <td>Maps a known physical MAC address back to its corresponding IP address.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>ICMP</strong></td>
+                        <td>Internet Control Message Protocol</td>
+                        <td>Used by network devices to send error messages and operational feedback (e.g., <code>ping</code>, <code>traceroute</code>).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Day 07 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 07</span>
+        <h3>Comprehensive Review & Module Assessment</h3>
+    </div>
+    
+    <p class="day-desc">
+        Participated in an interactive Q&amp;A session reviewing concepts across all completed modules, including CAD/CAM, programming fundamentals, laser cutting, and computer networking.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Module Review</span>
+        <span class="topic-tag">3D Features</span>
+        <span class="topic-tag">Java Loops</span>
+        <span class="topic-tag">Laser Cutting Formats</span>
+    </div>
+
+    <!-- Review Q&A Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Assessment Questions & Answers</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Question</th>
+                        <th>Answer / Explanation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>1</td>
+                        <td><strong>Why do we use Loops in programming?</strong></td>
+                        <td>To execute a block of code repeatedly based on a condition without rewriting code manually, saving time and memory.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><strong>Which file formats are used to export for Laser Cutting?</strong></td>
+                        <td>2D vector formats like <code>DXF</code> and <code>SVG</code>, as well as <code>DWG</code> files.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><strong>What is the difference between a Class and an Object in Java?</strong></td>
+                        <td>A Class is a blueprint/template, while an Object is a real instance created from that blueprint.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><strong>What is the primary role of a Router in networking?</strong></td>
+                        <td>To connect different networks together and route data packets to their target IP destinations.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><strong>What does the <code>this</code> keyword do in Java?</strong></td>
+                        <td>Refers to the current class instance/object and helps resolve variable shadowing when parameter names match instance variables.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><strong>What is the purpose of the <code>ping</code> command?</strong></td>
+                        <td>Uses ICMP echo messages to test network connectivity, latency, and reachability to a remote IP address.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!-- Day 08 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 08</span>
+        <h3>Real-Time Communication: WebSockets & WebRTC</h3>
+    </div>
+    
+    <p class="day-desc">
+        Explored protocols for real-time web interaction. Learned how <strong>WebSockets</strong> establish full-duplex TCP connections via HTTP handshakes, and how <strong>WebRTC</strong> enables peer-to-peer audio, video, and data streaming.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">WebSockets</span>
+        <span class="topic-tag">HTTP Handshake</span>
+        <span class="topic-tag">WebRTC</span>
+        <span class="topic-tag">Peer-to-Peer (P2P)</span>
+    </div>
+
+    <!-- WebSockets vs WebRTC Comparison Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Real-Time Technologies Comparison</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>WebSockets</th>
+                        <th>WebRTC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Primary Purpose</strong></td>
+                        <td>Bidirectional text/data streaming over single TCP connection.</td>
+                        <td>Real-time peer-to-peer audio, video, and data transmission.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Architecture</strong></td>
+                        <td>Client-Server (TCP based).</td>
+                        <td>Peer-to-Peer (P2P) directly between browsers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Handshake / Setup</strong></td>
+                        <td>HTTP <code>Upgrade</code> header initiates protocol switch.</td>
+                        <td>Uses signaling servers (STUN/TURN) to establish direct paths.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Use Cases</strong></td>
+                        <td>Live chat apps, real-time dashboards, notification feeds.</td>
+                        <td>Video conferencing (Zoom/Meet in browser), P2P file sharing.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Handshake Flowchart -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">WebSocket Connection Upgrade Flow</h4>
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-paper-plane flow-icon"></i>
+                <span class="flow-title">HTTP GET Request</span>
+                <span class="flow-sub">Upgrade: websocket</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-handshake flow-icon"></i>
+                <span class="flow-title">Server Response</span>
+                <span class="flow-sub">101 Switching Protocols</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-exchange-alt flow-icon"></i>
+                <span class="flow-title">WebSocket Channel</span>
+                <span class="flow-sub">Persistent Full-Duplex TCP</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+   </section>
+
+</body>
+</html>

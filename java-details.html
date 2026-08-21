@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 08 | Java Programming Progress</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section id="java-module" class="container">
+        <!-- Back Navigation -->
+        <div class="back-nav">
+            <a href="index.html#modules" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Modules
+            </a>
+        </div>
+
+        <!-- Header -->
+        <div class="section-header-blue">
+            <span class="cyber-tag">// MODULE 08</span>
+            <h2 class="sub-title-blue">Java Programming Progress</h2>
+        </div>
+
+        <!-- Timeline Content -->
+        <div class="timeline">
+        <!-- Day 01 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 01</span>
+        <h3>Introduction to Java & Syntax Fundamentals</h3>
+    </div>
+    
+    <p class="day-desc">
+        Explored the basics of programming languages, comparing Python (procedural & object-oriented for AI/ML) with <strong>Java</strong> (strictly Object-Oriented, widely used for application development). 
+        Learned about core tools like <strong>JDK</strong> (Java Development Kit) and <strong>JVM</strong> (Java Virtual Machine) for translating code into machine-understandable instructions.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">OOP Concepts</span>
+        <span class="topic-tag">JDK & JVM</span>
+        <span class="topic-tag">Java Syntax</span>
+        <span class="topic-tag">Method Breakdown</span>
+    </div>
+
+    <!-- Flowchart Section: Java Compilation & Execution Flow -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Java Execution Flowchart</h4>
+        <p class="day-desc">How Java code transforms from source code to screen output:</p>
+        
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-file-code flow-icon"></i>
+                <span class="flow-title">Demo.java</span>
+                <span class="flow-sub">Source Code</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-cogs flow-icon"></i>
+                <span class="flow-title">JDK (javac)</span>
+                <span class="flow-sub">Compiler</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-microchip flow-icon"></i>
+                <span class="flow-title">Demo.class</span>
+                <span class="flow-sub">Bytecode</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-play-circle flow-icon"></i>
+                <span class="flow-title">JVM</span>
+                <span class="flow-sub">Virtual Machine</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-desktop flow-icon"></i>
+                <span class="flow-title">Screen</span>
+                <span class="flow-sub">Output</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Syntax Breakdown Box -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Syntax Breakdown: "Hello World" Anatomy</h4>
+        <ul class="cad-bullets">
+            <li><strong>public:</strong> Access modifier allowing the class to be accessed from anywhere.</li>
+            <li><strong>class:</strong> Blueprint container for code (variables and methods). File name must match class name (e.g., <code>Demo.java</code> & <code>public class Demo</code>).</li>
+            <li><strong>{ } (Body Brackets):</strong> Encloses the class or method contents ("opens and closes the box").</li>
+            <li><strong>public static void main(String[] args):</strong> Entry point door for Java execution. Java enters the program through <code>main()</code>.</li>
+            <li><strong>System.out.println():</strong> Prints text to the screen (<code>out</code>) and moves to a new line.</li>
+            <li><strong>; (Semicolon):</strong> Statement terminator marking the end of an instruction.</li>
+        </ul>
+    </div>
+
+    <!-- House Analogy Visual Box -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Mental Model: The "Demo House" Analogy</h4>
+        <div class="house-analogy">
+            <div class="analogy-box">
+                <div class="box-header">🏠 public class Demo { ... }</div>
+                <div class="box-body">
+                    <div class="room-box">
+                        <span class="door">🚪 main() Door</span>
+                        <p>Java enters here first! If <code>main()</code> doesn't exist, execution cannot begin.</p>
+                    </div>
+                    <div class="action-box">
+                        <span class="screen">🖥️ System.out.println()</span>
+                        <p>Sends output to the computer screen and finishes with <code>;</code></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Assignment Code Box -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Day 01 Practice Assignment</h4>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class Demo {
+    public static void main(String[] args) {
+        System.out.println("Hello fablab");
+        System.out.println("Im Ajay");
+        System.out.println("EXTC Department");
+        System.out.println("SSGMCE");
+    }
+}</pre>
+    </div>
+
+</div>
+
+
+<!-- Day 02 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 02</span>
+        <h3>Variables, Data Types & Java Logic</h3>
+    </div>
+    
+    <p class="day-desc">
+        Learned how to store data using <strong>Variable Declaration and Initialization</strong>. 
+        Explored the difference between printing variable values versus literal text. 
+        Translated basic C programs into Java to build functional applications like a <strong>Calculator</strong> and a <strong>Simple Interest Calculator</strong> while mastering Primitive Data Types.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Variables & Memory</span>
+        <span class="topic-tag">Data Types</span>
+        <span class="topic-tag">Operators</span>
+        <span class="topic-tag">C to Java Logic</span>
+    </div>
+
+    <!-- Variable Concept Flowchart -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Variable Mental Model & Value vs. Text Flow</h4>
+        <p class="day-desc">Understanding how Java processes variables versus String literals:</p>
+        
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-box-open flow-icon"></i>
+                <span class="flow-title">int age = 20;</span>
+                <span class="flow-sub">Declare & Assign</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-terminal flow-icon"></i>
+                <span class="flow-title">println(age)</span>
+                <span class="flow-sub">Evaluates Variable</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-desktop flow-icon"></i>
+                <span class="flow-title">20</span>
+                <span class="flow-sub">Prints Stored Value</span>
+            </div>
+        </div>
+
+        <div class="flowchart-container" style="margin-top: 10px;">
+            <div class="flow-step">
+                <i class="fas fa-quote-left flow-icon"></i>
+                <span class="flow-title">"age"</span>
+                <span class="flow-sub">String Literal</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-terminal flow-icon"></i>
+                <span class="flow-title">println("age")</span>
+                <span class="flow-sub">Ignores Variable</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-desktop flow-icon"></i>
+                <span class="flow-title">age</span>
+                <span class="flow-sub">Prints Exact Text</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Types Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Core Java Data Types Overview</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Category</th>
+                        <th>Stored Value Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>int</strong></td>
+                        <td>Whole Numbers</td>
+                        <td><code>int marks = 95;</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>double / float</strong></td>
+                        <td>Decimals / Real Numbers</td>
+                        <td><code>double rate = 7.5;</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>char</strong></td>
+                        <td>Single Character</td>
+                        <td><code>char grade = 'A';</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>boolean</strong></td>
+                        <td>True/False Decision</td>
+                        <td><code>boolean isPassed = true;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Practice Programs -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Day 02 Practice Programs (C to Java)</h4>
+        
+        <p class="day-desc"><strong>1. Simple Calculator:</strong></p>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class Calculator {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 5;
+
+        System.out.println("Addition: " + (a + b));
+        System.out.println("Subtraction: " + (a - b));
+        System.out.println("Multiplication: " + (a * b));
+        System.out.println("Division: " + (a / b));
+    }
+}</pre>
+
+        <p class="day-desc" style="margin-top: 15px;"><strong>2. Simple Interest Calculation:</strong></p>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class SimpleInterest {
+    public static void main(String[] args) {
+        double principal = 1000.0;
+        double rate = 5.5;
+        int time = 2; // in years
+
+        double interest = (principal * rate * time) / 100;
+
+        System.out.println("Principal Amount: " + principal);
+        System.out.println("Calculated Simple Interest: " + interest);
+    }
+}</pre>
+    </div>
+
+</div>
+<!-- Day 03 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 03</span>
+        <h3>Java Operators & Bitwise Logic</h3>
+    </div>
+    
+    <p class="day-desc">
+        Explored the core operators in Java used to manipulate variables and perform mathematical, relational, and logical computations. 
+        Learned the inner workings of <strong>Arithmetic</strong>, <strong>Relational</strong>, <strong>Assignment</strong>, <strong>Unary (Increment/Decrement)</strong>, and binary <strong>Bitwise Operators</strong> with step-by-step bitwise evaluation.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Arithmetic & Relational</span>
+        <span class="topic-tag">Compound Assignment</span>
+        <span class="topic-tag">Increment / Decrement</span>
+        <span class="topic-tag">Bitwise (& and |)</span>
+    </div>
+
+    <!-- Operators Summary Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Java Operators Overview</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Operators</th>
+                        <th>Function / Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Arithmetic</strong></td>
+                        <td><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code></td>
+                        <td>Basic math calculations (Addition, Subtraction, Multiplication, Division, Modulus)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Relational</strong></td>
+                        <td><code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>, <code>&gt;=</code>, <code>&lt;=</code></td>
+                        <td>Compares two values and returns a <code>boolean</code> (true/false) result</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Assignment</strong></td>
+                        <td><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code></td>
+                        <td>Assigns and updates value directly (e.g., <code>a += c</code> is <code>a = a + c</code>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Increment/Decrement</strong></td>
+                        <td><code>++</code>, <code>--</code></td>
+                        <td>Increases or decreases variable value by 1 (e.g., <code>r++</code>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bitwise</strong></td>
+                        <td><code>&amp;</code>, <code>|</code></td>
+                        <td>Performs bit-level AND / OR operations on binary representations</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bitwise Logic Breakdown Box -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Bitwise Evaluation Flow (d = 5, e = 1)</h4>
+        <p class="day-desc">How Java evaluates Bitwise AND (<code>&amp;</code>) and Bitwise OR (<code>|</code>) at the binary level:</p>
+
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-microchip flow-icon"></i>
+                <span class="flow-title">5 = 0101<sub>2</sub></span>
+                <span class="flow-sub">1 = 0001<sub>2</sub></span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-calculator flow-icon"></i>
+                <span class="flow-title">0101 &amp; 0001</span>
+                <span class="flow-sub">Bitwise AND</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-desktop flow-icon"></i>
+                <span class="flow-title">0001 = 1</span>
+                <span class="flow-sub">Output: 1</span>
+            </div>
+        </div>
+
+        <div class="flowchart-container" style="margin-top: 10px;">
+            <div class="flow-step">
+                <i class="fas fa-microchip flow-icon"></i>
+                <span class="flow-title">5 = 0101<sub>2</sub></span>
+                <span class="flow-sub">1 = 0001<sub>2</sub></span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-calculator flow-icon"></i>
+                <span class="flow-title">0101 | 0001</span>
+                <span class="flow-sub">Bitwise OR</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-desktop flow-icon"></i>
+                <span class="flow-title">0101 = 5</span>
+                <span class="flow-sub">Output: 5</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Practice Code Snippets -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Day 03 Practice Code & Output</h4>
+        
+        <p class="day-desc"><strong>1. Operators Demonstration:</strong></p>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class OperatorsDemo {
+    public static void main(String[] args) {
+        int a = 10, b = 5;
+
+        // Arithmetic Operators
+        System.out.println("Sum : " + (a + b));
+        System.out.println("Subtraction : " + (a - b));
+        System.out.println("Multiplication : " + (a * b));
+        System.out.println("Division : " + (a / b));
+        System.out.println("Modulus : " + (a % b));
+
+        // Relational Operators
+        System.out.println(a == b);
+        System.out.println(a != b);
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a >= b);
+        System.out.println(a <= b);
+
+        // Assignment Operators
+        int c = 10;
+        System.out.println("c = " + c);
+        System.out.println("a += c => " + (a += c));
+        System.out.println("a -= c => " + (a -= c));
+        System.out.println("a *= c => " + (a *= c));
+        System.out.println("a /= c => " + (a /= c));
+        System.out.println("a %= c => " + (a %= c));
+
+        // Increment & Decrement
+        int r = 10;
+        r++;
+        System.out.println("After ++ :" + r);
+        r--;
+        System.out.println("After -- :" + r);
+
+        // Bitwise Operators
+        int d = 5, e = 1;
+        System.out.println(d & e); // Output: 1
+        System.out.println(d | e); // Output: 5
+    }
+}</pre>
+
+        <p class="day-desc" style="margin-top: 15px;"><strong>2. Salary Bonus Question (Compound Assignment Operator):</strong></p>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class SalaryBonus {
+    public static void main(String[] args) {
+        int salary = 20000;
+        salary += 500; // Adds 500 to current salary using compound assignment
+        System.out.println("Updated Salary: " + salary); // Output: Updated Salary: 20500
+    }
+}</pre>
+    </div>
+
+</div>
+<!-- Day 04 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 04</span>
+        <h3>Java Loops & Control Flow</h3>
+    </div>
+    
+    <p class="day-desc">
+        Explored repetitive execution in Java using <strong>Loops</strong>. 
+        Learned the structure, syntax, and execution flow of <strong>for</strong>, <strong>while</strong>, and <strong>do-while</strong> loops, along with loop control statements like <code>break</code> and <code>continue</code>.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">for Loop</span>
+        <span class="topic-tag">while Loop</span>
+        <span class="topic-tag">do-while Loop</span>
+        <span class="topic-tag">Loop Control</span>
+    </div>
+
+    <!-- Loops Overview Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Java Loops Summary</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Loop Type</th>
+                        <th>Best Used When</th>
+                        <th>Condition Check</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>for Loop</strong></td>
+                        <td>The exact number of iterations is known in advance.</td>
+                        <td>Entry-controlled (Checks condition before executing body)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>while Loop</strong></td>
+                        <td>The number of iterations depends on a condition being true.</td>
+                        <td>Entry-controlled (Checks condition before executing body)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>do-while Loop</strong></td>
+                        <td>The code block must execute at least once regardless of condition.</td>
+                        <td>Exit-controlled (Checks condition after executing body)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Loop Execution Flowchart Box -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">for Loop Execution Flow</h4>
+        <p class="day-desc">Step-by-step lifecycle of a standard Java <code>for</code> loop:</p>
+
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-play flow-icon"></i>
+                <span class="flow-title">Initialization</span>
+                <span class="flow-sub">int i = 1</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-question-circle flow-icon"></i>
+                <span class="flow-title">Condition Check</span>
+                <span class="flow-sub">i &lt;= 5 ?</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-code flow-icon"></i>
+                <span class="flow-title">Execute Body</span>
+                <span class="flow-sub">Print Statement</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-plus-circle flow-icon"></i>
+                <span class="flow-title">Update</span>
+                <span class="flow-sub">i++</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Practice Code Snippets -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Day 04 Practice Programs</h4>
+        
+        <p class="day-desc"><strong>1. Printing Numbers 1 to 5 using for, while, and do-while:</strong></p>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class LoopsDemo {
+    public static void main(String[] args) {
+        // 1. for loop
+        System.out.println("--- for Loop ---");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Count: " + i);
+        }
+
+        // 2. while loop
+        System.out.println("--- while Loop ---");
+        int j = 1;
+        while (j <= 5) {
+            System.out.println("Count: " + j);
+            j++;
+        }
+
+        // 3. do-while loop
+        System.out.println("--- do-while Loop ---");
+        int k = 1;
+        do {
+            System.out.println("Count: " + k);
+            k++;
+        } while (k <= 5);
+    }
+}</pre>
+
+    </div>
+
+</div>
+
+<!-- Day 05 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 05</span>
+        <h3>Java Methods, 1D & 2D Arrays</h3>
+    </div>
+    
+    <p class="day-desc">
+        Explored modular programming using <strong>Methods</strong> to write reusable, clean code blocks. 
+        Learned <strong>1D and 2D Arrays</strong> to store and manipulate contiguous memory collections of elements, along with dynamic user input handling using <code>Scanner</code> and nested loops.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Methods (Functions)</span>
+        <span class="topic-tag">1D Arrays</span>
+        <span class="topic-tag">2D Arrays (Matrices)</span>
+        <span class="topic-tag">Scanner Input</span>
+    </div>
+
+    <!-- Method Call & Array Memory Flowchart Box -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Method Execution & Array Indexing Flow</h4>
+        <p class="day-desc">How Java handles method calls and 0-indexed contiguous array memory:</p>
+
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-sign-in-alt flow-icon"></i>
+                <span class="flow-title">main() Call</span>
+                <span class="flow-sub">add(5, 10)</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-exchange-alt flow-icon"></i>
+                <span class="flow-title">Pass Parameters</span>
+                <span class="flow-sub">a = 5, b = 10</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-calculator flow-icon"></i>
+                <span class="flow-title">Execute Body</span>
+                <span class="flow-sub">a + b = 15</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-undo flow-icon"></i>
+                <span class="flow-title">Return/Print</span>
+                <span class="flow-sub">Output: 15</span>
+            </div>
+        </div>
+
+        <!-- 1D Array Memory Visual -->
+        <div class="house-analogy" style="margin-top: 15px;">
+            <div class="analogy-box">
+                <div class="box-header">📊 1D Array Memory Layout: int[] arr = new int[3]</div>
+                <div class="box-body">
+                    <div class="room-box">
+                        <span class="door">Index [0]</span>
+                        <p>Value: <strong>4</strong></p>
+                    </div>
+                    <div class="room-box">
+                        <span class="door">Index [1]</span>
+                        <p>Value: <strong>5</strong></p>
+                    </div>
+                    <div class="action-box">
+                        <span class="screen">Index [2]</span>
+                        <p>Value: <strong>7</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Concept Summary Table -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Methods & Arrays Key Concepts</h4>
+        <div class="cad-table-container">
+            <table class="cad-table">
+                <thead>
+                    <tr>
+                        <th>Concept</th>
+                        <th>Definition / Purpose</th>
+                        <th>Syntax / Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Method</strong></td>
+                        <td>A reusable block of code designed to perform a specific task</td>
+                        <td><code>static void greet() { ... }</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>1D Array</strong></td>
+                        <td>Fixed-size contiguous list storing elements of the same data type</td>
+                        <td><code>int[] arr = new int[size];</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>2D Array</strong></td>
+                        <td>A grid/matrix array of arrays indexed by rows and columns</td>
+                        <td><code>int[][] matrix = new int[row][col];</code></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Array Indexing</strong></td>
+                        <td>Positions start at 0 and end at <code>length - 1</code></td>
+                        <td>Valid indices for size 3: <code>0, 1, 2</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Day 06 Card -->
+<div class="day-card">
+    <div class="day-header">
+        <span class="day-num">Day 06</span>
+        <h3>Object-Oriented Programming: Classes, Objects & Constructors</h3>
+    </div>
+    
+    <p class="day-desc">
+        Dived into core Object-Oriented Programming (OOP) principles in Java. 
+        Learned how to define <strong>Classes and Objects</strong>, initialize object attributes using <strong>Constructors</strong>, resolve variable shadow conflicts using the <code>this</code> keyword, and perform <strong>Constructor Chaining</strong> using <code>this()</code>.
+    </p>
+
+    <div class="topics">
+        <span class="topic-tag">Classes & Objects</span>
+        <span class="topic-tag">Constructors</span>
+        <span class="topic-tag">this Keyword</span>
+        <span class="topic-tag">Constructor Chaining</span>
+    </div>
+
+    <!-- Constructor Chaining Execution Flowchart -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Constructor Chaining Execution Flow: CallConstructor(100)</h4>
+        <p class="day-desc">How Java handles <code>this()</code> constructor chaining at runtime:</p>
+
+        <div class="flowchart-container">
+            <div class="flow-step">
+                <i class="fas fa-play flow-icon"></i>
+                <span class="flow-title">new CallConstructor(100)</span>
+                <span class="flow-sub">Calls Parameterized Constructor</span>
+            </div>
+            
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-link flow-icon"></i>
+                <span class="flow-title">this() Call</span>
+                <span class="flow-sub">Delegates to Default Constructor First</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step">
+                <i class="fas fa-terminal flow-icon"></i>
+                <span class="flow-title">Print "Ajay"</span>
+                <span class="flow-sub">Executes Default Constructor Body</span>
+            </div>
+
+            <i class="fas fa-arrow-right flow-arrow"></i>
+
+            <div class="flow-step highlight-step">
+                <i class="fas fa-desktop flow-icon"></i>
+                <span class="flow-title">Print "100"</span>
+                <span class="flow-sub">Resumes Parameterized Constructor Body</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Practice Code Snippets -->
+    <div class="cad-practice-box" style="margin-top: 20px;">
+        <h4 class="highlight-title">Day 06 Practice Code </h4>
+        
+        <p class="day-desc"><strong>1. Student Class with Constructor & <code>this</code> Keyword:</strong></p>
+        <pre style="background: #0d0d0d; border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 8px; padding: 15px; color: #00D2FF; font-family: monospace; overflow-x: auto;">
+public class Student {
+    int age;
+    String name;
+
+    // Parameterized Constructor initializing instance attributes
+    Student(int age, String name) {
+        this.age = age;   // 'this.age' refers to instance variable, 'age' refers to parameter
+        this.name = name; // 'this.name' refers to instance variable, 'name' refers to parameter
+    }
+
+    void display() {
+        System.out.println(this.age + " " + this.name);
+    }
+
+    public static void main(String[] args) {
+        Student s1 = new Student(20, "Ajay");
+        s1.display(); // Output: 20 Ajay
+    }
+}</pre>
+
+        
+}</pre>
+    </div>
+
+</div>
+    </section>
+
+</body>
+</html>
